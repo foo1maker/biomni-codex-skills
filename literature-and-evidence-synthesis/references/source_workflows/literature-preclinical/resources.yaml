@@ -1,0 +1,25 @@
+schema_version: "1.0"
+source_workflow: "literature-preclinical"
+registry_authority: "../../../03_resource_registry/runtime_resource_mapping.csv"
+runtime_claim: "Registry-backed routing only; availability is not implied."
+primary:
+  []
+secondary:
+  - resource_id: "rr_e831e0349748e1f2"
+    resource_name: "Unpaywall"
+    resource_type: "database"
+    role: "Primary route for locating a lawful open-access PDF from a DOI."
+    current_runtime_status: "UNKNOWN"
+  - resource_id: "rr_167434c4f9e24365"
+    resource_name: "Europe PMC"
+    resource_type: "database"
+    role: "Fallback route for open biomedical full text and repository records."
+    current_runtime_status: "UNKNOWN"
+fallback:
+  - resource_id: "rr_1a6f829b476dc57e"
+    resource_name: "Retrieved abstract"
+    resource_type: "resource_selection"
+    role: "Use when no lawful open full text can be obtained; mark the evidence source as abstract."
+    current_runtime_status: "UNKNOWN"
+optional:
+  []

@@ -1,0 +1,20 @@
+schema_version: "1.0"
+source_workflow: "tusoskill"
+registry_authority: "../../03_resource_registry/runtime_resource_mapping.csv"
+runtime_claim: "Registry-backed routing only; availability is not implied."
+primary:
+  - resource_id: "rr_4c8feb8815911444"
+    resource_name: "Frozen benchmark and protected evaluation data"
+    resource_type: "resource_selection"
+    role: "Comparing every baseline, candidate, ablation, and finalist under the same scientific contract."
+    current_runtime_status: "UNKNOWN"
+secondary:
+  - resource_id: "rr_3d456e880a74c00c"
+    resource_name: "Training-safe literature, ontologies, curated databases, pretrained embeddings, and public datasets"
+    resource_type: "resource_selection"
+    role: "The resource can be converted into a testable method component and evaluated without leakage."
+    current_runtime_status: "UNKNOWN"
+fallback:
+  []
+optional:
+  []

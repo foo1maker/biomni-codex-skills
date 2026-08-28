@@ -1,0 +1,25 @@
+# Notice
+
+This repository is an independent, user-maintained adaptation of observable
+Biomni research-workflow descriptions captured on 2026-08-14.
+
+It is not affiliated with Biomni, Phylo, Stanford, or any referenced database,
+software, or model provider.
+
+The following were intentionally excluded from this public package:
+
+- Raw Biomni/Phylo page snapshots and exact source text.
+- Credentials, tokens, private keys, cookies, or session data.
+- Local filesystem paths and personal account information.
+- Biomni data lake content, model weights, bundled package files, MCP
+  configuration, and deployment state.
+- Third-party datasets, binaries, or license-restricted resources.
+
+Workflows may name external databases, packages, models, and services. Those
+references are routing knowledge only and do not imply installation,
+availability, permission, or redistribution rights. Users must verify each
+external resource's current terms before use.
+
+If any included adaptation is later found to be based on content whose public
+redistribution is not permitted, remove that material from this repository
+immediately.

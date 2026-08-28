@@ -1,0 +1,20 @@
+schema_version: "1.0"
+source_workflow: "tusoai"
+registry_authority: "../../03_resource_registry/runtime_resource_mapping.csv"
+runtime_claim: "Registry-backed routing only; availability is not implied."
+primary:
+  - resource_id: "rr_4eb004f8de831f58"
+    resource_name: "Protected baseline source and frozen evaluator"
+    resource_type: "resource_selection"
+    role: "Running baseline audits, candidate evaluation, and clean finalist reconstruction."
+    current_runtime_status: "UNKNOWN"
+secondary:
+  - resource_id: "rr_baf82a18b5b554e7"
+    resource_name: "External or orthogonal training-safe data"
+    resource_type: "resource_selection"
+    role: "It is not the original seed repository, not internal baseline seeding, and can be staged without changing the evaluator contract."
+    current_runtime_status: "UNKNOWN"
+fallback:
+  []
+optional:
+  []

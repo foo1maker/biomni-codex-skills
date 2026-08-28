@@ -1,0 +1,29 @@
+schema_version: "1.0"
+source_workflow: "cancer-cohort-genomics"
+registry_authority: "../../../03_resource_registry/runtime_resource_mapping.csv"
+runtime_claim: "Registry-backed routing only; availability is not implied."
+primary:
+  - resource_id: "rr_fb52f88fc88d3558"
+    resource_name: "cBioPortal public REST API"
+    resource_type: "resource_selection"
+    role: "Retrieving aggregate somatic mutation, copy-number, and non-identifying cancer-type attributes."
+    current_runtime_status: "UNKNOWN"
+secondary:
+  - resource_id: "rr_4e898a4245532e0b"
+    resource_name: "Literature search"
+    resource_type: "resource_selection"
+    role: "Grounding gene biology, top cancer types, therapeutic context, and report references."
+    current_runtime_status: "UNKNOWN"
+fallback:
+  []
+optional:
+  - resource_id: "rr_8f43998cd31a3498"
+    resource_name: "cBioPortal"
+    resource_type: "database"
+    role: "Public source of aggregate somatic mutation, high-level copy-number, and cancer-type data."
+    current_runtime_status: "UNKNOWN"
+  - resource_id: "rr_f446edf915b11e32"
+    resource_name: "TCGA open-access tier"
+    resource_type: "database"
+    role: "Default public cancer cohort data retrieved through cBioPortal."
+    current_runtime_status: "UNKNOWN"

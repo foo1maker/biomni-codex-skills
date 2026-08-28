@@ -1,0 +1,12 @@
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+credentials*
+tokens*
+auth.json
+*.log
+*.tmp

@@ -1,0 +1,36 @@
+schema_version: "1.0"
+source_workflow: "methods-landscape-review"
+registry_authority: "../../03_resource_registry/runtime_resource_mapping.csv"
+runtime_claim: "Registry-backed routing only; availability is not implied."
+primary:
+  []
+secondary:
+  []
+fallback:
+  []
+optional:
+  - resource_id: "rr_178baeb270b10c13"
+    resource_name: "pandas"
+    resource_type: "software"
+    role: "Structured corpus, screening, and evidence-table processing."
+    current_runtime_status: "UNKNOWN"
+  - resource_id: "rr_ae5d2965f1c73447"
+    resource_name: "reportlab"
+    resource_type: "software"
+    role: "Report generation support."
+    current_runtime_status: "UNKNOWN"
+  - resource_id: "rr_c625bc4be2dc2ab7"
+    resource_name: "pypdf"
+    resource_type: "software"
+    role: "PDF structural validation."
+    current_runtime_status: "UNKNOWN"
+  - resource_id: "rr_f3a4936deaf955aa"
+    resource_name: "ggplot2"
+    resource_type: "software"
+    role: "Data-driven figure generation."
+    current_runtime_status: "UNKNOWN"
+  - resource_id: "rr_9c40795c5beef2c4"
+    resource_name: "ggprism"
+    resource_type: "software"
+    role: "Figure styling support."
+    current_runtime_status: "UNKNOWN"
