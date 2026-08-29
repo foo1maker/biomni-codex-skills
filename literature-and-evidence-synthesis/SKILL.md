@@ -1,6 +1,6 @@
 ---
 name: literature-and-evidence-synthesis
-description: "Use when literature must be searched, screened, extracted, compared, audited, or quantitatively synthesized with claim-level citations, access-aware provenance, and explicit evidence limits."
+description: "Use when literature evidence must be screened, extracted, compared, audited, or quantitatively synthesized with claim-level citations, access-aware provenance, and explicit evidence limits."
 ---
 
 # Literature and evidence synthesis
@@ -11,6 +11,20 @@ Route five distinct evidence modes: narrative review, preclinical extraction,
 audit-ready deep review, methods landscape comparison, and quantitative
 meta-analysis. Keep their evidence units and claims separate while sharing
 retrieval, screening, citation, and provenance discipline.
+
+## Retrieval boundary
+
+PRIMARY STATUS:
+Primary method skill for literature evidence synthesis, not primary retrieval
+engine.
+
+- Ordinary interactive biomedical retrieval: Life Sciences Literature.
+- Specialized, batch, deterministic, or fallback retrieval: paper-lookup.
+- User-supplied records or citations: use them directly; do not force a new search.
+- This Skill owns screening, extraction, comparison, claim-level provenance,
+  conflict resolution, uncertainty, and synthesis.
+
+Do not use this Skill as the default entry for a simple literature query.
 
 ## When to use
 
